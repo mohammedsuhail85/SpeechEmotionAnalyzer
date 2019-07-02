@@ -1,0 +1,3 @@
+#!/home/suhail/Desktop/Speech-Emotion-Analyzer/bin/python
+from numba.pycc import main
+main()
