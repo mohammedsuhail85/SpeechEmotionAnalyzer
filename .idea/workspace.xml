@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2640c965-9f09-4ec9-899f-36b3978d5f94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/final_results_gender_test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/final_results_gender_test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Speech-Emotion-Analyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Speech-Emotion-Analyzer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/easy_install-3.6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/easy_install-3.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/f2py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/f2py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/f2py3" beforeDir="false" afterPath="$PROJECT_DIR$/bin/f2py3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/f2py3.6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/f2py3.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/numba" beforeDir="false" afterPath="$PROJECT_DIR$/bin/numba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/pip3.6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pip3.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final_results_gender_test-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/final_results_gender_test-Copy1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/decorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/decorator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/_runtests.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/_runtests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/ccallback.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/ccallback.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/debuginfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/debuginfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/generators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/postproc.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/postproc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/sigutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/sigutils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/download.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib64/python3.6/site-packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib64/python3.6/site-packages/six.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,26 +36,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AudioRecorder.ipynb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/final_results_gender_test.ipynb">
+        <entry file="file://$PROJECT_DIR$/final_results_gender_emotion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18735">
-              <caret line="771" column="22" selection-start-line="771" selection-start-column="22" selection-end-line="771" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
+            <state relative-caret-position="330">
+              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="e#2#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,6 +57,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/final_results_gender_emotion.py" />
       </list>
     </option>
   </component>
@@ -59,6 +72,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
     <option name="y" value="25" />
     <option name="width" value="960" />
     <option name="height" value="1055" />
@@ -68,27 +82,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Speech-Emotion-Analyzer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Speech-Emotion-Analyzer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Speech-Emotion-Analyzer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Speech-Emotion-Analyzer" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="SpeechEmotionAnalyzer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeechEmotionAnalyzer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,6 +112,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="final_results_gender_emotion" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true">
+      <module name="Speech-Emotion-Analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_results_gender_emotion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.final_results_gender_emotion" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -117,13 +156,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17870322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -137,11 +177,18 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/final_results_gender_emotion.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Predictions.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AudioRecorder.ipynb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -154,8 +201,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/final_results_gender_test.ipynb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18735">
-          <caret line="771" column="22" selection-start-line="771" selection-start-column="22" selection-end-line="771" selection-end-column="22" />
+        <state relative-caret-position="15">
+          <caret line="771" column="17" lean-forward="true" selection-start-line="771" selection-start-column="17" selection-end-line="771" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AudioRecorder.ipynb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/final_results_gender_emotion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#2#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
