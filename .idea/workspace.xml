@@ -2,31 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2640c965-9f09-4ec9-899f-36b3978d5f94" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Speech-Emotion-Analyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Speech-Emotion-Analyzer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/suhail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/suhail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/bin/easy_install" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/easy_install-3.6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/easy_install-3.6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/f2py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/f2py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/f2py3" beforeDir="false" afterPath="$PROJECT_DIR$/bin/f2py3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/f2py3.6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/f2py3.6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/numba" beforeDir="false" afterPath="$PROJECT_DIR$/bin/numba" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/pip3.6" beforeDir="false" afterPath="$PROJECT_DIR$/bin/pip3.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/final_results_gender_test-Copy1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/final_results_gender_test-Copy1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/decorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/decorator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/_runtests.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/_runtests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/ccallback.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/ccallback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/debuginfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/debuginfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/generators.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/generators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/postproc.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/postproc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/sigutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/numba/sigutils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/pip/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.6/site-packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/python3.6/site-packages/six.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib64/python3.6/site-packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib64/python3.6/site-packages/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,19 +20,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/final_results_gender_emotion.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="-199">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
-                <element signature="e#2#24#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>twodim</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,24 +66,22 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/final_results_gender_emotion.py" />
+        <option value="$PROJECT_DIR$/venv/server.py" />
+        <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/src/audio_extract.py" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Speech-Emotion-Analyzer.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="960" />
-    <option name="y" value="25" />
+    <option name="y" value="27" />
     <option name="width" value="960" />
-    <option name="height" value="1055" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -90,6 +96,16 @@
               <item name="SpeechEmotionAnalyzer" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpeechEmotionAnalyzer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpeechEmotionAnalyzer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeechEmotionAnalyzer" type="462c0819:PsiDirectoryNode" />
+              <item name="splited" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeechEmotionAnalyzer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeechEmotionAnalyzer" type="462c0819:PsiDirectoryNode" />
+              <item name="uploaded_vid" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -98,8 +114,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../voice_analysis" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uploaded_vid" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -113,8 +138,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="final_results_gender_emotion" type="PythonConfigurationType" factoryName="Python" singleton="false" temporary="true">
+  <component name="RunManager" selected="Python.run">
+    <configuration name="Run Speech Emotion Recognizer" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <module name="Speech-Emotion-Analyzer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,7 +151,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_results_gender_emotion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Speech-Emotion-Analyzer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,7 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.final_results_gender_emotion" />
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.Run Speech Emotion Recognizer" />
       </list>
     </recent_temporary>
   </component>
@@ -155,37 +202,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="960" y="27" width="960" height="1053" extended-state="4" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17870322" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32337245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32715377" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3261339" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/final_results_gender_emotion.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Predictions.csv">
@@ -209,12 +245,30 @@
     <entry file="file://$PROJECT_DIR$/AudioRecorder.ipynb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/final_results_gender_emotion.py">
+    <entry file="file://$PROJECT_DIR$/server.py" />
+    <entry file="file://$PROJECT_DIR$/src/audio_extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="40" lean-forward="true" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
           <folding>
-            <element signature="e#2#24#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
           </folding>
         </state>
       </provider>

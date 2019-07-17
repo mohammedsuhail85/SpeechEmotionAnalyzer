@@ -122,3 +122,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#custom selection
+extracted_audio/test_vid.wav
+extracted_audio/
+uploaded_vid/
+uploaded_files/
+*.wav
