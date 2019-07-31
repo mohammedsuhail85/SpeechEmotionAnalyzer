@@ -56,7 +56,7 @@ def get_emotion_predicted(audio_path):
             multipart = {'file': ('sample.wav', open(audio_path, 'rb'), 'audio/x-wav', {'Expires': '0'})}
 
             print("Making Request")
-            response_1 = requests.post(url_transcript, files=multipart)
+            # response_1 = requests.post(url_transcript, files=multipart)
             response_2 = requests.post(url_emotion, files=multipart)
 
             # if response_1.status_code == 200 and response_2 == 200:
@@ -64,7 +64,7 @@ def get_emotion_predicted(audio_path):
             #         # "Emotion_Analysis": response_2.content,
             #         "Transcript": response_1.content
             #     })
-            return response_1.json()
+            return response_2.json()
         except Exception as ex:
             ex.with_traceback()
             return jsonify({
