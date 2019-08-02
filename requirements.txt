@@ -18,7 +18,7 @@ cycler==0.10.0
 decorator==4.4.0
 defer==1.0.6
 distro-info===0.18ubuntu0.18.04.1
-Django==2.2.2
+Django==2.2.3
 feedparser==5.2.1
 Flask==1.1.1
 Flask-RESTful==0.3.7
