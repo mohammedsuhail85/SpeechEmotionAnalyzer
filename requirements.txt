@@ -1,0 +1,11 @@
+librosa
+numpy
+requests
+scikit-learn
+matplotlib
+pandas
+flask
+flask_restful
+keras
+tensorflow
+pickle
