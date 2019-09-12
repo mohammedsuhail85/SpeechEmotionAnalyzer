@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "speech-coach-57659",
+  "private_key_id": "b5f419efd04e5cda3dd96e2ac8fdc80ad0e20c4a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXC6xF8i+ds/9Q\n68o54OVJojxRWlrOLu9+eMnljRsQQ1P3pRlxIaFqsoV13n4JQ4EvuwJ63QHYbpZu\ncIyd7VLN5PhH50YI8iNsh1LW8a9HFZ2tP6kDxq0eBNlg5mgxpJNTjhKoTi2L28jH\nqCncoLFVP3yLVYvXfw3vmQ15Fkk0ZLL3+uAMRkjVJf1EiCXKxn+rv6AV+wx1AM1i\nu6wMBQfXtMGstTt2D/MkwPxW5ibLMZqxAG///FOuK/7PHwTE9LByMYbYuRPflauP\n2LvFwOV3z3J1SV2l7yK9VzDYAsme8jF4NiXwnI2PhKg9kSx5YO1OLo0Km7V7aX/4\nJdh+UA3RAgMBAAECggEAATJvb9qi3GqqesJu11bV7+Yw4vY9yygEhtx+3M6l3lFO\nbL9E62KxVoa0qqzlk4E5fUQgbDUOul9JnXopTje9kXShoF5vmJBaFVPFG+Bi7JWS\nN+sPmPwu7bVyzR2uaf66IANXPaVk9Rvw4iugqaAhwve3gCimi2yJoOvMYQArjovk\nu7Os9oS++WbM8bnnEPsPDnOjFy2Q4iOlN1PJ77qlQRUZOL6ImFrmdlMgTLoCu5N1\nBmHmn+EsWi6mx8axpRpugWth+D283ru/LrZ6z70bkMBvRo8Ad3EG/EoPTbg/7la4\nAQb1e48H4qossoGpHkPME26HPVqaIOTNpREo6aDAAQKBgQD4t6Gvg/E0JdEWTaZ9\n0p4HAU/OkUURn/IsBsiO7KNVYq2MH4s9T/MktAuKhllXmeAqVa/EPAZ6pHEKBpQH\nv/mCRWqIxoKr+P/arCu73p1tqTTOxhT2KHCjAnVPYPUWgRIfKOaBaRK1VThWeVPc\n+IMJbIIYuJma/YMfn3kDPBkIIQKBgQDdV6Pze+eur8U4j0UHoVVbiRul/8JJorig\nZVmGcX/iXgs00dO4MSIgqxpW+Hj6bhjgeCOdCtbO0tm4IeTwP9/yNY64KN+7OB4D\n72vuEL04L7oPDrqzz4iV0tm+0BGYCX1N/zJfZO652EqFf8ceJvYSdS3yuAOW6nBi\nZvzY6pePsQKBgQCvXMojdmQa4I8LqrQ5AsdpKQOcIdERHDUj1aSTIUYIbgrvQU5r\nbHOC7W81vIRBv7zOHJxRQAFRd6A78WduD21c7JSw20ZG+slq5Pnw/IUDTMpvADrH\nVLwWMyWDUll8BIVCcxQTKoKGWA/g6Kq4on/BpUAVLhMftJ8/LLGmFjmQAQKBgH+Q\nJNMMk8efUWB5YWU2W8U3TZHrxoM9nn4CKwhKnVNOs9KrIwPCfVKqibGZ3c8maHvl\ngVDekFH+Pq/aCOFVTrF+oFQOanKxssq9z0wSpZqeFvLaoEtEzgjazdckfx9KSMcM\nznEf8F13A+vQamc8OREGK4b4+kidsEtl4074VIThAoGBALZz7n0A9kpEEFPfH7xC\no8XeOa0GfBLYwdqp1S0tkQHKkEl2bAsfbp7Zp0q5DZjCjR8SFCl86GYuAGAhrX6D\n427N6durKRYo7Mxj2mk886Z/0SWd4BHheHm3IqgqRTbu0glmgzlUWMut5wEe6ViW\nRkgqYBtC0YdQzDzda2hFMd7r\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-coach-57659@appspot.gserviceaccount.com",
+  "client_id": "110368649805862085536",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-coach-57659%40appspot.gserviceaccount.com"
+}

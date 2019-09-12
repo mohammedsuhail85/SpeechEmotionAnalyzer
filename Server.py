@@ -1,7 +1,6 @@
 import librosa
 import librosa.display
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 import pickle
 import pandas as pd
@@ -13,8 +12,13 @@ from werkzeug import secure_filename
 import os
 import datetime
 
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
 
 from werkzeug.exceptions import BadRequestKeyError
+import warnings
+warnings.filterwarnings('ignore')
 
 lb = LabelEncoder()
 file = open('lbsave.txt', 'rb')
@@ -24,11 +28,15 @@ lb = pickle.load(file)
 UPLOAD_FOLDER = '/home/suhail/Desktop/SpeechEmotionAnalyzer/uploaded_files'
 # UPLOAD_FOLDER = os.environ["UPLOAD_FOLDER"] if "UPLOAD_FOLDER" in os.environ else "./uploaded_files"
 PORT = 5000
-ALLOWED_EXTENTIONS = ['wav']
+ALLOWED_EXTENTIONS = ['wav', 'mp4']
 
 app = Flask(__name__)
 api = Api(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+cred = credentials.Certificate('./firebase_config.json')
+firebase_admin.initialize_app(cred)
+db = firestore.client()
 
 
 def load_model():
@@ -64,7 +72,7 @@ def get_emotion(audio_path, session):
         # data, sampling_rate = librosa.load('hUY8DiQgUUg-0-30_2019-06-22_224559.797771.wav')
 
         # # get_ipython().run_line_magic('pylab', 'inline')
-        plt.figure(figsize=(15, 5))
+        # plt.figure(figsize=(15, 5))
         librosa.display.waveplot(data, sr=sampling_rate)
 
         # livedf= pd.DataFrame(columns=['feature'])
@@ -126,7 +134,15 @@ def upload_file(session):
                 audio_path = ("uploaded_files/" + filename_new)
 
                 result = slice_audio(audio_path, session)
+
+                db.collection('sessions').document(session).update({
+                    "audio": {
+                        "Voice Emotions": result
+                    }
+                })
                 return jsonify({
+                    "Session Id": session,
+                    "Status": "Process completed and Firebasse updated",
                     "Emotions": result
                 })
 
@@ -195,7 +211,7 @@ def slice_audio(audio_path, session):
         return response_list
 
     except Exception as ex:
-        return str(ex)
+        return str(ex), 400
 
 
 if __name__ == '__main__':
