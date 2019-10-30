@@ -11,6 +11,7 @@ from flask_restful import Api
 from werkzeug import secure_filename
 import os
 import datetime
+from pathlib import Path
 
 import firebase_admin
 from firebase_admin import credentials
@@ -21,11 +22,22 @@ import warnings
 warnings.filterwarnings('ignore')
 
 lb = LabelEncoder()
-file = open('lbsave.txt', 'rb')
+file = open('../saved_models/lbsave.txt', 'rb')
 lb = pickle.load(file)
 
 
-UPLOAD_FOLDER = '/home/suhail/Desktop/SpeechEmotionAnalyzer/uploaded_files'
+# UPLOAD_FOLDER = '/home/suhail/Desktop/SpeechEmotionAnalyzer/uploaded_files'
+UPLOAD_FOLDER = Path("../uploaded_files")
+
+print(UPLOAD_FOLDER.name)
+print(UPLOAD_FOLDER.suffix)
+print(UPLOAD_FOLDER.stem)
+print(UPLOAD_FOLDER.exists())
+
+if not UPLOAD_FOLDER.exists():
+    print("File not exists: Creating Folder at :" + str(Path.name))
+    Path.mkdir(self, mode=755, parents=True, exist_ok=True)
+
 # UPLOAD_FOLDER = os.environ["UPLOAD_FOLDER"] if "UPLOAD_FOLDER" in os.environ else "./uploaded_files"
 PORT = 5000
 ALLOWED_EXTENTIONS = ['wav', 'mp4']
@@ -34,7 +46,7 @@ app = Flask(__name__)
 api = Api(app)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-cred = credentials.Certificate('./firebase_config.json')
+cred = credentials.Certificate('../firebase_config.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
@@ -42,12 +54,12 @@ db = firestore.client()
 def load_model():
     global loaded_model
     from keras.models import model_from_json
-    json_file = open('model.json', 'r')
+    json_file = open('../saved_models/model.json', 'r')
     loaded_model_json = json_file.read()
     json_file.close()
     loaded_model = model_from_json(loaded_model_json)
     # load weights into new model
-    loaded_model.load_weights("saved_models/Emotion_Voice_Detection_Model.h5")
+    loaded_model.load_weights("../saved_models/Emotion_Voice_Detection_Model.h5")
     loaded_model._make_predict_function()
     # loaded_model._make_predict_function()
     print("Loaded model from disk")
@@ -55,19 +67,9 @@ def load_model():
 
 def get_emotion(audio_path, session):
     try:
-        # from keras.models import model_from_json
-        # json_file = open('model.json', 'r')
-        # loaded_model_json = json_file.read()
-        # json_file.close()
-        # loaded_model = model_from_json(loaded_model_json)
-        # # load weights into new model
-        # loaded_model.load_weights("saved_models/Emotion_Voice_Detection_Model.h5")
-        # loaded_model._make_predict_function()
-        # # loaded_model._make_predict_function()
-        # print("Loaded model from disk")
 
         data, sampling_rate = librosa.load(audio_path)
-        duration = str(len(data) / sampling_rate) + "sec"
+        duration = str(len(data) / sampling_rate)
         print(duration)
         # data, sampling_rate = librosa.load('hUY8DiQgUUg-0-30_2019-06-22_224559.797771.wav')
 
@@ -93,8 +95,6 @@ def get_emotion(audio_path, session):
         liveabc = livepreds1.astype(int).flatten()
 
         livepredictions = (lb.inverse_transform(liveabc))
-
-        # K.clear_session()
 
         return livepredictions, duration
 
@@ -131,7 +131,7 @@ def upload_file(session):
                     filename + '_' + current_time + ".wav")
                 f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename_new))
 
-                audio_path = ("uploaded_files/" + filename_new)
+                audio_path = ("../uploaded_files/" + filename_new)
 
                 result = slice_audio(audio_path, session)
 

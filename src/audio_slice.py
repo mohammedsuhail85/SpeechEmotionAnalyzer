@@ -8,7 +8,7 @@ try:
     sound = AudioSegment.from_file_using_temporary_files("/home/suhail/Desktop/SpeechEmotionAnalyzer/test_vid.wav")
 
     duration = sound.duration_seconds
-    slicing_time = 4
+    slicing_time = 5
     print(duration)
 
     count = (duration // slicing_time) + 1
