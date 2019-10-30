@@ -29,14 +29,11 @@ lb = pickle.load(file)
 # UPLOAD_FOLDER = '/home/suhail/Desktop/SpeechEmotionAnalyzer/uploaded_files'
 UPLOAD_FOLDER = Path("../uploaded_files")
 
-print(UPLOAD_FOLDER.name)
-print(UPLOAD_FOLDER.suffix)
-print(UPLOAD_FOLDER.stem)
 print(UPLOAD_FOLDER.exists())
 
 if not UPLOAD_FOLDER.exists():
-    print("File not exists: Creating Folder at :" + str(Path.name))
-    Path.mkdir(self, mode=755, parents=True, exist_ok=True)
+    print("File not exists: Creating Folder at :" + str(UPLOAD_FOLDER.name))
+    UPLOAD_FOLDER.mkdir(mode=0o777, parents=False, exist_ok=False)
 
 # UPLOAD_FOLDER = os.environ["UPLOAD_FOLDER"] if "UPLOAD_FOLDER" in os.environ else "./uploaded_files"
 PORT = 5000
@@ -71,11 +68,10 @@ def get_emotion(audio_path, session):
         data, sampling_rate = librosa.load(audio_path)
         duration = str(len(data) / sampling_rate)
         print(duration)
-        # data, sampling_rate = librosa.load('hUY8DiQgUUg-0-30_2019-06-22_224559.797771.wav')
 
         # # get_ipython().run_line_magic('pylab', 'inline')
         # plt.figure(figsize=(15, 5))
-        librosa.display.waveplot(data, sr=sampling_rate)
+        # librosa.display.waveplot(data, sr=sampling_rate)
 
         # livedf= pd.DataFrame(columns=['feature'])
         X, sample_rate = librosa.load(audio_path, res_type='kaiser_fast', duration=2.5, sr=22050 * 2, offset=0.5)
@@ -203,7 +199,6 @@ def slice_audio(audio_path, session):
                 "Duration": duration
             }
             response_list.append(result)
-
 
         print("Process completed")
         # for x in response_list:
