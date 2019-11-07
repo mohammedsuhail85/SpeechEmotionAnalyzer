@@ -222,7 +222,7 @@ if __name__ == '__main__':
     try:
         print("Emotion Recognizer started on PORT "+str(PORT))
         load_model()
-        app.run(port=PORT, debug=True)
+        app.run(port=PORT, debug=True, host="0.0.0.0")
 
     except Exception as e:
         e.with_traceback()
