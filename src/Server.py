@@ -28,12 +28,19 @@ lb = pickle.load(file)
 
 # UPLOAD_FOLDER = '/home/suhail/Desktop/SpeechEmotionAnalyzer/uploaded_files'
 UPLOAD_FOLDER = Path("../uploaded_files")
+TEMP_FOLDER = Path("../temp")
 
 print(UPLOAD_FOLDER.exists())
 
 if not UPLOAD_FOLDER.exists():
     print("File not exists: Creating Folder at :" + str(UPLOAD_FOLDER.name))
     UPLOAD_FOLDER.mkdir(mode=0o777, parents=False, exist_ok=False)
+
+print(TEMP_FOLDER.exists())
+
+if not TEMP_FOLDER.exists():
+    print("File not exists: Creating Folder at :" + str(TEMP_FOLDER.name))
+    TEMP_FOLDER.mkdir(mode=0o777, parents=False, exist_ok=False)
 
 # UPLOAD_FOLDER = os.environ["UPLOAD_FOLDER"] if "UPLOAD_FOLDER" in os.environ else "./uploaded_files"
 PORT = 5000
@@ -103,11 +110,12 @@ def allowed_file(filename):
         filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENTIONS
 
 
-@app.route('/audio/test', methods=['GET', 'POST'])
+@app.route('/sea/test', methods=['GET'])
 def test_api():
     if request.method == 'GET':
         return jsonify({
-            "Message": "Success"
+            "Status": "System Running",
+            "Port": PORT
         })
 
 
@@ -167,11 +175,12 @@ def slice_audio(audio_path, session):
 
         list_audio = []
 
+        print(TEMP_FOLDER.name)
         for x in range(0, count-1):
             start = x*slicing_time*1000
             end = (x+1)*slicing_time*1000
             segment = sound[start:end]
-            audio_file_name = "/home/suhail/Desktop/SpeechEmotionAnalyzer/temp/seg"+str(x)+".wav"
+            audio_file_name = str(TEMP_FOLDER.name) + "seg_" + str(x)+ "_" + str(session) + ".wav"
             list_audio.append(audio_file_name)
             segment.export(audio_file_name, format="wav")
 
