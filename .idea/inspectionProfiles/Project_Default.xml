@@ -20,6 +20,8 @@
         <list>
           <option value="firebase_admin" />
           <option value="src.Server.*" />
+          <option value="src.server.*" />
+          <option value="werkzeug.secure_filename" />
         </list>
       </option>
     </inspection_tool>

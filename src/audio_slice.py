@@ -1,49 +1,53 @@
-import os
-import glob
 from pydub import AudioSegment
-import requests
+from pathlib import Path
 
 
-try:
-    sound = AudioSegment.from_file_using_temporary_files("/home/suhail/Desktop/SpeechEmotionAnalyzer/test_vid.wav")
+TEMP_FOLDER = Path("temp")
 
-    duration = sound.duration_seconds
-    slicing_time = 5
-    print(duration)
 
-    count = (duration // slicing_time) + 1
-    count = int(count)
-    print(count)
+def slice_audio(audio_path, session):
+    try:
+        # sound = AudioSegment.from_file_using_temporary_files("/home/suhail/Desktop/SpeechEmotionAnalyzer/test_vid.wav")
+        sound = AudioSegment.from_file(audio_path)
 
-    list_audio = []
+        duration = sound.duration_seconds
+        slicing_time = 4
+        print(duration)
 
-    for x in range(0, count):
-        start = x*slicing_time*1000
-        end = (x+1)*slicing_time*1000
-        segment = sound[start:end]
-        audio_file_name = "/home/suhail/Desktop/SpeechEmotionAnalyzer/temp/seg"+str(x)+".wav"
-        list_audio.append(audio_file_name)
-        segment.export(audio_file_name, format="wav")
+        count = (duration // slicing_time) + 1
+        count = int(count)
+        print(count)
 
-    print("saved")
+        list_audio = []
 
-    url_emotion = "http://127.0.0.1:5000/audio/getemotion"
+        print(TEMP_FOLDER.name)
+        for x in range(0, count-1):
+            start = x*slicing_time*1000
+            end = (x+1)*slicing_time*1000
+            segment = sound[start:end]
+            audio_file_name = str(TEMP_FOLDER.name) + "/seg_" + str(x) + "_" + str(session) + ".wav"
+            list_audio.append(audio_file_name)
+            segment.export(audio_file_name, format="wav")
 
-    response_list = []
+        print("saved")
 
-    for x in list_audio:
-        print(x)
+        response_list = []
 
-        multipart = {'file': ('sample.wav', open(x, 'rb'), 'audio/x-wav', {'Expires': '0'})}
-        print("Making Request")
+        for x in list_audio:
+            print(x)
+            captured_emotion, duration = get_emotion(x, session)
 
-        response = requests.post(url_emotion, files=multipart)
-        if response.status_code == 200:
-            response_list.append(response.content)
+            emotion = captured_emotion[0].split('_')[1]
+            print(emotion)
 
-    print("Request completed")
-    for x in response_list:
-        print(x)
+            result = {
+                "Emotion": emotion,
+                "Duration": duration
+            }
+            response_list.append(result)
 
-except Exception as ex:
-    ex.with_traceback()
+        print("Process completed")
+        return response_list
+
+    except Exception as ex:
+        return str(ex), 400
