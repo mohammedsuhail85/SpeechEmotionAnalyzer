@@ -71,28 +71,29 @@ def load_model():
 
 def get_emotion(audio_path, session):
     try:
+        # with session.as_default():
+        #     with session.graph.as_default():
+                data, sampling_rate = librosa.load(audio_path)
+                duration = str(len(data) / sampling_rate)
+                print(duration)
 
-        data, sampling_rate = librosa.load(audio_path)
-        duration = str(len(data) / sampling_rate)
-        print(duration)
+                X, sample_rate = librosa.load(audio_path, res_type='kaiser_fast', duration=2.5, sr=22050 * 2, offset=0.5)
+                sample_rate = np.array(sample_rate)
+                mfccs = np.mean(librosa.feature.mfcc(y=X, sr=sample_rate, n_mfcc=13), axis=0)
 
-        X, sample_rate = librosa.load(audio_path, res_type='kaiser_fast', duration=2.5, sr=22050 * 2, offset=0.5)
-        sample_rate = np.array(sample_rate)
-        mfccs = np.mean(librosa.feature.mfcc(y=X, sr=sample_rate, n_mfcc=13), axis=0)
+                featurelive = mfccs
 
-        featurelive = mfccs
+                livedf2 = featurelive
+                livedf2 = pd.DataFrame(data=livedf2)
+                livedf2 = livedf2.stack().to_frame().T
 
-        livedf2 = featurelive
-        livedf2 = pd.DataFrame(data=livedf2)
-        livedf2 = livedf2.stack().to_frame().T
+                twodim = np.expand_dims(livedf2, axis=2)
 
-        twodim = np.expand_dims(livedf2, axis=2)
+                livepreds = loaded_model.predict(twodim, batch_size=32, verbose=1)
+                livepreds1 = livepreds.argmax(axis=1)
+                liveabc = livepreds1.astype(int).flatten()
 
-        livepreds = loaded_model.predict(twodim, batch_size=32, verbose=1)
-        livepreds1 = livepreds.argmax(axis=1)
-        liveabc = livepreds1.astype(int).flatten()
-
-        livepredictions = (lb.inverse_transform(liveabc))
+                livepredictions = (lb.inverse_transform(liveabc))
 
         return livepredictions, duration
 
@@ -203,6 +204,7 @@ def slice_audio(audio_path, session):
         return response_list
 
     except Exception as ex:
+        
         return str(ex), 400
 
 
