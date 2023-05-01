@@ -1,6 +1,6 @@
 deepspeech==0.5.1
 firebase-admin==2.18.0
-Flask==1.1.1
+Flask==2.3.2
 Flask-RESTful==0.3.7
 Keras==2.2.4
 librosa==0.6.3
